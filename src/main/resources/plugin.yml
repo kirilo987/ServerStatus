@@ -1,0 +1,21 @@
+name: ServerStatus
+version: '1.0-SNAPSHOT'
+main: org.kxysl1k.serverStatus.ServerStatus
+api-version: '1.21'
+prefix: Discord-server-satus-chanel
+load: STARTUP
+authors: [ Kxysl1k ]
+website: https://kxysl1k.netlify.app/
+depend: [DiscordSRV]
+
+commands:
+  serverstatus:
+    description: Команда для перезагрузки и синхронизации каналов
+    usage: /<command> reload | sync
+permissions:
+  serverstatus.reload:
+    description: Перезагрузить конфигурацию
+    default: op
+  serverstatus.sync:
+    description: Синхронизировать каналы
+    default: op
